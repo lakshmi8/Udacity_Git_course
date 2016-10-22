@@ -1,0 +1,86 @@
+1) What happens when you initialize a repository? Why do you need to do it?
+
+
+
+When we initialize a repository, an empty repository will be created. No commits will be done. We have initialize because
+only then we can do commit operations on files/directories.
+
+---------------------------------------------------------------------------------
+
+2) How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+
+
+Staging area operates as an intermediate layer between your repository and commit. A commit would be meaningful only when there is any logical change. If the logical
+change involves two or more files, you have to commit them together. Staging area will help you add those files alone to commit. Otherwise commit will simply take
+a snapshot of all files in the repository.
+
+---------------------------------------------------------------------------------
+
+3) How can you use the staging area to make sure you have one commit per logical
+ change?
+
+Staging area allows us to group files for commit. So, staging area helps us to commit a logical change in cases when there are more than one file which undergoes 
+a change (combined to be logical).
+
+
+
+---------------------------------------------------------------------------------
+
+4) What are some situations when branches would be helpful in keeping your history
+ organized? How would branches help?
+
+Branching would be useful & helpful:
+
+* While developing two versions of the same app.
+* While testing something for experimental purposes.
+* When more than one people are working in the same project.
+
+
+
+---------------------------------------------------------------------------------
+
+5) How do the diagrams help you visualize the branch structure?
+
+
+
+* It helps in seeing what all commits I have made.
+* It helps in understanding the way git stores it commits.
+* It is difficult to keep in mind all the branches which I create. This helps in navigating to a particular point in the structure easily without much effort.
+
+---------------------------------------------------------------------------------
+
+6) What is the result of merging two branches together? Why do we represent it in
+ the diagram the way we do?
+
+
+
+Merging two branches will result in a branch consisting of the changes in both the branches. The diagram is represented in such a way that I can understand the commits
+which will be included in the git log. 
+
+---------------------------------------------------------------------------------
+
+7) What are the pros and cons of Git’s automatic merging vs. always doing merges
+ manually?
+
+
+Automatic merging:
+
+Pros:
+
+* Lessens the work of the user.
+
+Cons:
+
+* Difficult when there is an ambuiguity. 
+
+Manual merging:
+
+Cons:
+
+* User will be overloaded with many tasks.
+
+Pros:
+
+* Only user can handle ambuiguity.

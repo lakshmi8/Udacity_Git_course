@@ -1,0 +1,151 @@
+********
+git log
+********
+
+To see the history of commits you have done.
+
+*************************************
+git diff old_commit_id new_commit_id
+*************************************
+
+To compare two commit versions
+
+***************
+git log --stat
+***************
+
+To see what all files are changed in each commit.
+
+**************
+git clone URL
+**************
+
+For cloning a repository
+
+**********************************
+git config --global color.ui auto
+**********************************
+
+To apply colours to insertion and deletion of lines in files
+
+********************************
+git checkout previous_commit_id
+********************************
+
+To revert back our file to a previous commit
+
+******
+ls -a
+******
+
+Will list all the files and folders in the current directory (including the hidden files).
+
+*********
+git init
+*********
+
+Initialises git and creates an empty repository in the current directory.
+
+***********
+git status
+***********
+
+Displays what all files are modified after the last commit
+
+********
+git add
+********
+
+There will be a staging area in between the files section and the actual commit section. To add the files into the staging area, this command is used.
+
+***********
+git commit
+***********
+
+Used to commit the files in the staging area.
+
+*********
+git diff
+*********
+
+It is different from "git diff old_commit_id new_commit_id" in the sense that it doesn't need any parameters. This command is used to see the changes between the 
+current repository and the staging area.
+
+******************
+git diff --staged
+******************
+
+This command is used to see the changes between the staging area and the repository.
+
+*****************
+git reset --hard
+*****************
+
+This command discards the changes either in the working directory or the staging area (Irreversible command, so be careful in using this).
+
+***********
+git branch
+***********
+
+Lists the branch present in the repository. The branch which has a '*' next to the name is the recently checked-out branch.
+
+*************************
+git branch <branch_name>
+*************************
+
+Creates a new branch named "branch_name". Use "git checkout <branch_name>" to move to that branch.
+
+**********************************************************
+git log --graph --oneline <branch_name_1> <branch_name_2>
+**********************************************************
+
+Used to visualize the branch structure (Commit history diagram).
+
+********************************
+git merge <branch_1> <branch_2>
+********************************
+
+Merges branch_2 into branch_1.
+
+********************
+git show <commit_id>
+********************
+
+Used to see the differences between a commit and its parent without knowing who the parent was. Especially useful after merging two branches.
+
+****************************
+git branch -d <branch_name>
+****************************
+
+Used to delete a branch.
+
+*************
+git log -n 1
+*************
+
+Specifying the number of commits to be shown.
+
+***********
+git remote
+***********
+
+Used to see what all remote github branches we have.
+
+**************************************
+git remote add <repository_name> <url>
+**************************************
+
+Repository name is the name which is used to refer to the repository on the github.
+
+**************
+git remote -v
+**************
+
+To know more information about git remote.
+
+*************************************
+git push <remote_name> <branch_name>
+*************************************
+To send changes to the remote.
+<remote_name>: The remote you want to send changes to.
+<branch_name>: The name of the local branch I would like to push.

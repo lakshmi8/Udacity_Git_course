@@ -1,0 +1,52 @@
+I) How did viewing a diff between two versions help you spot the bug ?
+
+1) If older versions worked correctly and the changes I made are the reason for failure, then viewing the differences in the code will help me find where I made changes so that I can revert back to the working state.
+
+2) Differences will report the typos I made by mistake. Sometimes typos like receive/recieve can be very difficult to manually find out.
+
+=============================================================================
+
+II) How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+1) Ease of access (I can easily revert back the changes I made).
+2) I can review all the code and check my progress over time (Testing how I improve).
+3) I can have two versions of my application (think in terms of android).
+
+=============================================================================
+
+III) What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+1) A commit can be done for a logical change in the code. Following this way, makes each commit a meaningful one and won't clumpse the history (PRO).
+2) Sometimes we may forget to save the code (or) the computer may fall short of power, in which case our progress is lost. Autosave saves the data (CON).
+
+=============================================================================
+
+IV) Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+1) Git is created with "CODE" as the main focus. Since codes in projects have dependencies across files, multi-file commit is useful.
+
+=============================================================================
+
+V) How can you use the commands git log and git diff to view the history of files?
+
+git log: To view the recent commits (It includes a unique commit id, author, Date & time, A message to understand what you did in that commit).
+git diff: To compare two commits.
+
+=============================================================================
+
+VI) How might using version control make you more confident to make changes that
+could break something?
+
+We can always do something with peak level confidence if we are provided with an option of reverting the action back. Version control gives us the power of doing
+that :) _/\_
+
+=============================================================================
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use Git in all the projects I work from now on.
+
+=============================================================================
